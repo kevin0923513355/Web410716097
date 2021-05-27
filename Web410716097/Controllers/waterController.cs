@@ -9,8 +9,18 @@ namespace Web410716097.Controllers
     public class waterController : Controller
     {
         // GET: water
-        public ActionResult Index()
+        public ActionResult Index(string name, float? weight)
         {
+            var result = "";
+
+            if(weight.HasValue)
+            { 
+                result = (weight * 30) + "cc";
+            }
+
+            ViewBag.name = name;
+            ViewBag.result = result;
+
             return View();
         }
     }
