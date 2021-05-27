@@ -9,11 +9,11 @@ namespace Web410716097.Controllers
     public class TestController : Controller
     {
         // GET: Test
-        public ActionResult Index()
+        public ActionResult HW1()
         {
             return View();
         }
-        public ActionResult HW1()
+        public ActionResult HW2()
         {
             return View();
         }
