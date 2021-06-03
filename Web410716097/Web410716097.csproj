@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TESTController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\waterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -169,12 +170,14 @@
     <Content Include="Views\TEST\HW2.cshtml" />
     <Content Include="Views\TEST\HW3.cshtml" />
     <Content Include="Views\water\Index.cshtml" />
+    <Content Include="Views\User\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Default\" />
+    <Folder Include="Views\SignUp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

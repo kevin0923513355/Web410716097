@@ -17,10 +17,6 @@ namespace Web410716097.Controllers
         {
             return View();
         }
-        public ActionResult HW2()
-        {
-            return View();
-        }
         public ActionResult HW3()
         {
             ViewBag.yytty = "hahaha";
