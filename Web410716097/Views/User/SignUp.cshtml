@@ -7,9 +7,9 @@
 
 @using (Html.BeginForm("SignUp", "User", FormMethod.Post))
 {
-    <p>姓名:@Html.TextBoxFor(m => m.Name) @Model.NameMessage</p>
-    <p>帳號:@Html.TextBoxFor(m => m.Account) @Model.AccountMessage</p>
-    <p>密碼:@Html.PasswordFor(m => m.Password) @Model.PasswordMessage</p>
+    <p>@Html.DisplayNameFor( a => a.Name):@Html.TextBoxFor(m => m.Name) @Html.ValidationMessageFor(m => m.Name)</p>
+    <p>@Html.DisplayNameFor( b => b.Account):@Html.TextBoxFor(m => m.Account) @Html.ValidationMessageFor(m => m.Account)</p>
+    <p>@Html.DisplayNameFor( c => c.Password):@Html.PasswordFor(m => m.Password) @Html.ValidationMessageFor(m => m.Password)</p>
     <p>@Model.Message</p>
     <input type="submit" name="name" value="註冊" />
 }
